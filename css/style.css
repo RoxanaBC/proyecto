@@ -62,8 +62,8 @@ a {
   text-decoration: none;
 }
 
-/**** Componentes ****/
-/*** Boton color amarrillo ***/
+/**autor Roxana**/
+/*** Boton color azul a renta ***/
 .btn-amarrillo-block {
   background-color: var(--second-alpha-color);
   font-weight: bold;
@@ -75,6 +75,8 @@ a {
   display: block;
   border: none;
 }
+/** fin del estilo*
+
 /*** Boton color amarrillo hover ***/
 .btn-amarrillo-block:hover {
   background-color: var(--first-alpha-color);
@@ -219,10 +221,13 @@ header {
     padding: 0 0.5rem;
     margin-bottom: 2rem;
   }
+  /** autor roxana**/
+  /**estilo en la coluna de nostros **/
   .nosotros-container1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  /** fin del estilo**/
 }
 
 .container-menu {
@@ -413,21 +418,27 @@ header {
   width: 9rem;
   height: 9rem;
 }
+/**autor Roxana**/
+/** estilo al icono de nosotros**/
 .icono-valores {
   width: 9rem;
   height: 9rem;
 
 }
+/** fin de estilo**/
 /*** media para desktop de nosotros*****/
 @media (min-width: 1024px) {
   .nosotros-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  /**autor Roxana**/
+  /** estilo para las colunas de nostros**/
   .nosotros-container1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  /** fin del estilo**/
 }
 
 /****Catalago Home****/
@@ -438,13 +449,15 @@ header {
 .catalago-container {
   margin-bottom: 1rem;
 }
-
+/**autor roxana**/
+/**cambio de color al div de renta **/
 .anuncio {
   width: 100%;
   background-color: var(--white-color);
   padding: 1rem 1.5rem;
   margin: 1rem auto;
 }
+/**fin del estilo**/
 .img-anuncio {
   width: 100%;
   height: auto;
@@ -490,8 +503,8 @@ header {
   height: 3rem;
   margin-right: 1rem;
 }
-
-/**** media para desktop de catalago ****/
+/*** estilo para renta autor Roxana**/
+/**** media para desktop de renta ****/
 @media (min-width: 1024px) {
   .catalago-container {
     display: grid;
@@ -499,6 +512,7 @@ header {
     gap: 2rem;
   }
 }
+/** fin del estilo**/
 
 /*** Contactanos ****/
 .contacto h1 {
@@ -594,3 +608,4 @@ footer span {
     margin: auto;
   }
 }
+
