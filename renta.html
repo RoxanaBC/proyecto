@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mandamos a llamar un API de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <!-- mandamos a llamar la hoja de estilos y la hoja de normalize -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>BienesRaicesTux</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="head">
+            <div class="head-title">
+                <h1>Bienes<span>Raices</span>Tux</h1>
+            </div>
+            <div class="head-text">
+                <p></p>
+                Venta de Casas y Departamentos en Tuxtla Gutierrez, Chiapas.
+                </p>
+            </div>
+            <!-- boton -->
+            <a href="contacto.html" class="boton">Contactame</a>
+        </div>
+    </header>
+    <!-- barra menu -->
+    <section class="container container-menu menu">
+        <div class="logo">
+            <a href="index.html">BienesRaicesTux</a>
+        </div>
+        <!-- botones para activar o desactivar el menu -->
+        <div class="botones ocultar">
+            <!-- estrella para favoritos -->
+            <a href="favorito.html">
+                <svg class="favorito" xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                </svg>
+            </a>
+            <buttton class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+                </svg>
+                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+                </svg>
+            </buttton>
+        </div>
+        <!-- menu de contenido -->
+        <nav class="bar-nav">
+            <ul class="bar-menu" id="bar-menu">
+                <li class="menu--item">
+                    <a class="home ocultar menu--link" href="index.html">Home</a>
+                    <a class="menu--link" href="favoritos.html">
+                        <svg class="none favorito" xmlns=" http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu--item contenedor-menu">
+                    <a class="menu--link submenu-btn" href="#">Cuenta
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="ocultar icon icon-tabler icon-tabler-chevron-down" width="30" height="30"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <!-- usamos un submenu para las partes desplegables -->
+                    <ul class="submenu">
+                        <li class="menu--item">
+                            <a class="menu--link" href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="menu--item">
+                            <a class="menu--link" href="cuenta.html">Crear Cuenta</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="publicar.html">Publicar</a>
+                </li>
+                <li class="menu--item contenedor-menu">
+                    <a class="menu--link submenu-btn" href="#">Catalago
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="ocultar icon icon-tabler icon-tabler-chevron-down" width="30" height="30"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <!-- usamos un submenu para las partes desplegables -->
+                    <ul class="submenu">
+                        <li class="menu--item">
+                            <a class="menu--link" href="venta.html">Venta</a>
+                        </li>
+                        <li class="menu--item">
+                            <a class="menu--link" href="renta.html">Renta</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="dudas.html">Dudas</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- seccion del catalago -->
+    <section class="contenedor">
+        <div class="catalago-home">
+            <h2>
+                Casas y Departamentos en Renta
+            </h2>
+            <div class="catalago-container">
+                <!-- tarjeta de la casa publicada -->
+                <div class="anuncio">
+                    <img src="img/blog7.jpg" alt="blog 1" class="img-anuncio">
+                    <div class="info-anuncio">
+                        <h3>Bonita Casa en Renta Fracc. Residencial bonanza</h3>
+                        <p>
+                            Bonita Casa en renta lista para habitar con vista ala pisina, son dos niveles con tres recámaras dos de ellas con closet,Planta baja:Estacionamiento para tres autos  Sala-comedor,cocina cubierta de granito equipada con estufa, campana y alacena, Cuarto de lavado, secado.
+                        </p>
+                        <p class="precio-anuncio">
+                            $14,000,000.00
+                        </p>
+                        <ul class="iconos-caracteristicas">
+                            <li>
+                                <img src="img/icono_wc.svg" alt="icono-wc" class="img-caracteristicas">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_estacionamiento.svg" alt="icono-estacionamiento"
+                                    class="img-caracteristicas">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_dormitorio.svg" alt="icono-dormitorio" class="img-caracteristicas">
+                                <p>3</p>
+                            </li>
+                        </ul>
+                        <a href="anuncios.html" class="btn-amarrillo-block">
+                            Ver Propiedad
+                        </a>
+                    </div>
+                </div>
+
+                <!-- tarjeta de la casa publicada -->
+                <div class="anuncio">
+                    <img src="img/blog8.jpg" alt="blog 1" class="img-anuncio">
+                    <div class="info-anuncio">
+                        <h3>Bonita Casa en Renta,fracc.La victoria</h3>
+                        <p>Cuenta con un buen diseño y decoracion.
+                            La alberca es sencilla y se mantiene al nivel del piso, casi como un espejo de agua, lo que la hace refinada y elegante, en perfecta sintonía con el diseño general de la casa.Es amplia y luminoso inmueble de construcción moderna.
+                        </p>
+                        <p class="precio-anuncio">
+                            $8,000,000.00
+                        </p>
+                        <ul class="iconos-caracteristicas">
+                            <li>
+                                <img src="img/icono_wc.svg" alt="icono-wc" class="img-caracteristicas">
+                                <p>1</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_estacionamiento.svg" alt="icono-estacionamiento"
+                                    class="img-caracteristicas">
+                                <p>4</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_dormitorio.svg" alt="icono-dormitorio" class="img-caracteristicas">
+                                <p>4</p>
+                            </li>
+                        </ul>
+                        <a href="anuncios.html" class="btn-amarrillo-block">
+                            Ver Propiedad
+                        </a>
+                    </div>
+                </div>
+                <!-- tarjeta de la casa publicada -->
+                <div class="anuncio">
+                    <img src="img/blog9.jpg" alt="blog 1" class="img-anuncio">
+                    <div class="info-anuncio">
+                        <h3>Bonita Casa en Renta en Puerta de hierro residencial</h3>
+                        <p>
+                            Bonita Casa,cuenta con  sala y comedor con techos de doble altura, la cocina totalmente equipada con acabados de alta calidad, alacena y cuarto de lavar, además el primer piso cuenta con una recamara con terraza y baño completo. En el segundo piso, tres recamaras, cada una con su baño completo .
+                        </p>
+                        <p class="precio-anuncio">
+                            $15,000,000.00
+                        </p>
+                        <ul class="iconos-caracteristicas">
+                            <li>
+                                <img src="img/icono_wc.svg" alt="icono-wc" class="img-caracteristicas">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_estacionamiento.svg" alt="icono-estacionamiento"
+                                    class="img-caracteristicas">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_dormitorio.svg" alt="icono-dormitorio" class="img-caracteristicas">
+                                <p>2</p>
+                            </li>
+                        </ul>
+                        <a href="anuncios.html" class="btn-amarrillo-block">
+                            Ver Propiedad
+                        </a>
+                    </div>
+                </div>
+                <!-- tarjeta de la casa publicada -->
+                <div class="anuncio">
+                    <img src="img/blog10.jpg" alt="blog 1" class="img-anuncio">
+                    <div class="info-anuncio">
+                        <h3>Bonita Casa en Renta Fracc.Tres marias</h3>
+                        <p>
+                            Casa de cinco recámaras ubicada dentro de un complejo privado de acceso controlado.Habitación independiente con cama individual, closet, escritorio, frigobar, baño completo propio. Incluye agua, luz, gas e internet.
+                        </p>
+                        <p class="precio-anuncio">
+                            $6,000,000.00
+                        </p>
+                        <ul class="iconos-caracteristicas">
+                            <li>
+                                <img src="img/icono_wc.svg" alt="icono-wc" class="img-caracteristicas">
+                                <p>5</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_estacionamiento.svg" alt="icono-estacionamiento"
+                                    class="img-caracteristicas">
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_dormitorio.svg" alt="icono-dormitorio" class="img-caracteristicas">
+                                <p>5</p>
+                            </li>
+                        </ul>
+                        <a href="anuncios.html" class="btn-amarrillo-block">
+                            Ver Propiedad
+                        </a>
+                    </div>
+                </div>
+                <!-- tarjeta de la casa publicada -->
+                <div class="anuncio">
+                    <img src="img/blog11.jpg" alt="blog 1" class="img-anuncio">
+                    <div class="info-anuncio">
+                        <h3>Bonita Casa en Renta Fracc.Las aguilas.Zona norte oriente de Tuxtla Gutierrez</h3>
+                        <p>
+                            Bonita Casa cuenta con 10 metros de terreno, estacionamiento para 2 autos chicos, 2 recamaras con baño, una cama matrimonial y un colchón individual cada una, otra recamara con una cama matrimonial y un sofá cama matrimonial, 1 baño completo para servicio de la sala, comedor, cocina equipada, terraza con asador, amplio jardín, bonita alberca y jacuzzi
+                        </p>
+                        <p class="precio-anuncio">
+                            $11,000,000.00
+                        </p>
+                        <ul class="iconos-caracteristicas">
+                            <li>
+                                <img src="img/icono_wc.svg" alt="icono-wc" class="img-caracteristicas">
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_estacionamiento.svg" alt="icono-estacionamiento"
+                                    class="img-caracteristicas">
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_dormitorio.svg" alt="icono-dormitorio" class="img-caracteristicas">
+                                <p>2</p>
+                            </li>
+                        </ul>
+                        <a href="anuncios.html" class="btn-amarrillo-block">
+                            Ver Propiedad
+                        </a>
+                    </div>
+                </div>
+                <!-- tarjeta de la casa publicada -->
+                <div class="anuncio">
+                    <img src="img/blog12.jpg" alt="blog 1" class="img-anuncio">
+                    <div class="info-anuncio">
+                        <h3>Bonita Casa en Renta Fracc.Baranca verde,en la Zona norte poniente de la cuidad,frente a plazo sol</h3>
+                        <p>
+                          Cuenta con un amplio jardín que rodea la casa, cocina full equipada, 2 comedores, (interno y externo), diversos espacios para utilizar y compartir. Cuenta con una parrilla con horno y roastizador, amplias terrazas en ambos niveles y un amplio deck frente ala pisina.
+                        </p>
+                        <p class="precio-anuncio">
+                            $7,000,000.00
+                        </p>
+                        <ul class="iconos-caracteristicas">
+                            <li>
+                                <img src="img/icono_wc.svg" alt="icono-wc" class="img-caracteristicas">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_estacionamiento.svg" alt="icono-estacionamiento"
+                                    class="img-caracteristicas">
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <img src="img/icono_dormitorio.svg" alt="icono-dormitorio" class="img-caracteristicas">
+                                <p>3</p>
+                            </li>
+                        </ul>
+                        <a href="anuncios.html" class="btn-amarrillo-block">
+                            Ver Propiedad
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p>Bienes<span>Raices</span>Tux Todos los Derechos Reservados &copy;</p>
+    </footer>
+
+    <!-- mandamos a llmar js -->
+    <script src=" js/script.js"></script>
+</body>
+
+</html>

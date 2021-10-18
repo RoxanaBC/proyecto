@@ -1,0 +1,596 @@
+/***** Custom Properties******/
+:root {
+  --first-color: #ffe54f;
+  --first-alpha-color: rgba(255, 229, 79, 0.75);
+  --second-color: #00335a;
+  --second-alpha-color: rgba(0, 106, 170, 0.75);
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --link-color: #509ee3;
+  --title-color: #333;
+  --text-color: #222;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --font: "Krub", sans-serif;
+  --max-width: 120rem;
+}
+
+/***** Espacio de Reseteo *****/
+/*** Codigo para el box model***/
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 15px;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden; /*Oculta el scroll cuando se desvorda un contenido */
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/***Configuramos los titulos ***/
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 3.8rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**** Componentes ****/
+/*** Boton color amarrillo ***/
+.btn-amarrillo-block {
+  background-color: var(--second-alpha-color);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black-color);
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  display: block;
+  border: none;
+}
+/*** Boton color amarrillo hover ***/
+.btn-amarrillo-block:hover {
+  background-color: var(--first-alpha-color);
+}
+/**** Boton azul ***/
+.boton-azul {
+  background-color: var(--second-color);
+  color: var(--white-color);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  display: inline-block;
+  border: none;
+  width: 30%;
+}
+/*** Boton azul hover***/
+.boton-azul:hover {
+  cursor: pointer;
+  background-color: var(--second-alpha-color);
+  color: var(--title-color);
+}
+/*** Boton azul a la izquierda ***/
+.boton-azul-rigth {
+  text-align: right;
+}
+
+/*** estilos de boton ****/
+.boton {
+  background-color: var(--first-alpha-color);
+  color: var(--white-color);
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: auto;
+  border: none;
+}
+/*** estilos de boton hover****/
+.boton:hover {
+  background-color: var(--first-color);
+  color: var(--black-color);
+}
+
+/*** estilo de sombra ***/
+.sombra {
+  box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.44);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/***** Utilidades ******/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+.none {
+  display: none;
+  pointer-events: none;
+  overflow: hidden;
+  height: 0;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/*** Estilos de la pagina ****/
+
+/**** header *****/
+header {
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.head {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--white-color);
+}
+
+.head-title {
+  width: auto;
+  margin: 0 auto;
+  font-size: 2.5vh;
+}
+
+.head-title span {
+  color: var(--first-color);
+}
+
+.head-text {
+  font-size: 3vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/**** header desktop ****/
+@media (min-width: 1024px) {
+  .head-title,
+  .head-text {
+    text-align: center;
+    font-size: 5vh;
+  }
+}
+
+/*** Barra Menu ****/
+.menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  padding: 1rem;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--second-color);
+}
+
+/*** Media para hacer cambio a desktop ***/
+@media (min-width: 1024px) {
+  .menu {
+    position: static;
+    top: 10rem;
+    padding: 0 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .nosotros-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: var(--first-color);
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+/**** div de los botones***/
+.botones {
+  background-color: var(--second-color);
+  cursor: pointer;
+  margin: 0;
+}
+
+.botones svg {
+  fill: var(--first-color);
+  pad: 1rem;
+}
+
+/**** menu de contenido ****/
+.bar-nav {
+  position: fixed;
+  left: 0;
+  bottom: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--first-color);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bar-menu,
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bar-menu {
+  width: 100%;
+}
+
+.menu--link {
+  display: block;
+  padding: 0.65rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.menu--link:hover {
+  background-color: var(--second-color);
+  color: var(--white-color);
+  width: 100%;
+}
+.menu--link:hover > svg {
+  fill: var(--white-color);
+}
+
+.bar-nav.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.submenu {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.submenu .menu--link {
+  background-color: var(--second-alpha-color);
+  padding-left: 4rem;
+}
+
+/**** Media para el menu de contenido ****/
+@media (min-width: 1024px) {
+  .none {
+    display: inline;
+  }
+  .ocultar {
+    display: none;
+  }
+  .none {
+    display: inline-block;
+    pointer-events: auto;
+    overflow: visible;
+    height: auto;
+  }
+  .favorito {
+    cursor: pointer;
+    margin: 0;
+    fill: var(--first-color);
+    pad: 1rem;
+  }
+
+  .menu--link:hover > .favorito {
+    fill: var(--black-color);
+  }
+
+  .bar-nav {
+    position: static;
+    background-color: var(--secundario);
+    opacity: 1;
+    pointer-events: auto;
+    width: auto;
+  }
+
+  .bar-menu {
+    display: flex;
+  }
+
+  .contenedor-menu {
+    position: relative;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 4rem;
+    width: 15rem;
+    overflow: visible;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .submenu .menu--link {
+    padding: 0;
+  }
+
+  .contenedor-menu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu--link {
+    color: var(--first-color);
+  }
+
+  .bar-menu .menu--item .menu--link:hover {
+    background-color: var(--first-color);
+    color: var(--black-color);
+  }
+
+  .submenu .menu--item {
+    padding: 0;
+  }
+
+  .menu--item:hover .menu--link {
+    color: var(--black-color);
+  }
+}
+
+/**** sobre-nosotros ****/
+.nosotros-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1.5rem;
+  padding: 0;
+}
+
+.valores {
+  text-align: center;
+}
+
+.valores h3 {
+  font-weight: normal;
+  margin: 0.5rem;
+}
+
+.valores p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.valores .icono-valores {
+  width: 9rem;
+  height: 9rem;
+}
+.icono-valores {
+  width: 9rem;
+  height: 9rem;
+
+}
+/*** media para desktop de nosotros*****/
+@media (min-width: 1024px) {
+  .nosotros-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .nosotros-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/****Catalago Home****/
+.catalago-home h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.catalago-container {
+  margin-bottom: 1rem;
+}
+
+.anuncio {
+  width: 100%;
+  background-color: var(--white-color);
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+}
+.img-anuncio {
+  width: 100%;
+  height: auto;
+  min-height: 15rem;
+  max-height: 30rem;
+  margin: 0;
+}
+
+.info-anuncios {
+  padding: 2rem;
+}
+
+.info-anuncio h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.info-anuncio p {
+  text-align: justify;
+  margin: 0;
+}
+
+.info-anuncio .precio-anuncio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--second-alpha-color);
+}
+
+.iconos-caracteristicas {
+  list-style: none;
+  padding: 0;
+  max-width: 40rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconos-caracteristicas li {
+  display: flex;
+}
+
+.iconos-caracteristicas li img {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+/**** media para desktop de catalago ****/
+@media (min-width: 1024px) {
+  .catalago-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/*** Contactanos ****/
+.contacto h1 {
+  width: 100%;
+  font-size: 3.8rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  color: var(--title-color);
+}
+
+/**** Formulario ****/
+.formulario {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.formulario legend {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.formulario label {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+}
+/**** aqui usamos estilos css para los inputs que no sean de tipo submit***/
+.formulario input:not([type="submit"]),
+.formulario select,
+.formulario textarea {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: var(--gray-light-color);
+  border: 1px solid var(--gray-dark-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formulario textarea {
+  height: 20rem;
+}
+
+.formulario p {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+/*** forma de contactar ***/
+.formulario .forma-contacto {
+  max-width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/**** aqui usamos estilos css para los inputs que son de tipo radio***/
+.formulario input[type="radio"] {
+  margin: 0;
+  width: auto;
+}
+
+/*** footer ****/
+footer {
+  background-color: var(--second-alpha-color);
+  width: 100%;
+  height: 10rem;
+  display: flex;
+}
+
+footer p {
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer span {
+  color: var(--first-color);
+}
+
+@media (min-width: 1024px) {
+  footer {
+    height: 5rem;
+    margin: auto;
+  }
+}

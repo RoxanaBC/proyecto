@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>BienesRaicesTux</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="head">
+            <div class="head-title">
+                <h1>Bienes<span>Raices</span>Tux</h1>
+            </div>
+            <div class="head-text">
+                <p></p>
+                Venta de Casas y Departamentos en Tuxtla Gutierrez, Chiapas.
+                </p>
+            </div>
+            <!-- boton -->
+            <a href="contacto.html" class="boton">Contactame</a>
+        </div>
+    </header>
+    <!-- barra menu -->
+    <section class="container container-menu menu">
+        <div class="logo">
+            <a href="index.html">BienesRaicesTux</a>
+        </div>
+        <!-- botones para activar o desactivar el menu -->
+        <div class="botones ocultar">
+            <!-- estrella para favoritos -->
+            <a href="favorito.html">
+                <svg class="favorito" xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                </svg>
+            </a>
+            <buttton class="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+                </svg>
+                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+                </svg>
+            </buttton>
+        </div>
+        <!-- menu de contenido -->
+        <nav class="bar-nav">
+            <ul class="bar-menu" id="bar-menu">
+                <li class="menu--item">
+                    <a class="home ocultar menu--link" href="index.html">Home</a>
+                    <a class="menu--link" href="favoritos.html">
+                        <svg class="none favorito" xmlns=" http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu--item contenedor-menu">
+                    <a class="menu--link submenu-btn" href="#">Cuenta
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="ocultar icon icon-tabler icon-tabler-chevron-down" width="30" height="30"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <!-- usamos un submenu para las partes desplegables -->
+                    <ul class="submenu">
+                        <li class="menu--item">
+                            <a class="menu--link" href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="menu--item">
+                            <a class="menu--link" href="cuenta.html">Crear Cuenta</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="publicar.html">Publicar</a>
+                </li>
+                <li class="menu--item contenedor-menu">
+                    <a class="menu--link submenu-btn" href="#">Catalago
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="ocultar icon icon-tabler icon-tabler-chevron-down" width="30" height="30"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <!-- usamos un submenu para las partes desplegables -->
+                    <ul class="submenu">
+                        <li class="menu--item">
+                            <a class="menu--link" href="venta.html">Venta</a>
+                        </li>
+                        <li class="menu--item">
+                            <a class="menu--link" href="renta.html">Renta</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="menu--item">
+                    <a class="menu--link" href="dudas.html">Dudas</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- contactanos -->
+    <main class="contenedor contacto">
+        <h1>Contactanos</h1>
+        <h2>Llene el formulario de Contacto</h2>
+        <!-- formulario de contacto -->
+        <form action="" class="formulario">
+            <!-- informacion personal -->
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="Tu Nombre">
+                <label for="correo">E-mail</label>
+                <input id="correo" type="email" placeholder="Tu Correo Electronico">
+                <label for="telefono">Nombre</label>
+                <input id="telefono" type="tel" placeholder="Tu Teléfono">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+            <!-- informacion sobre propiedad -->
+            <fieldset>
+                <legend>Información Sobre la Propiedad</legend>
+                <label for="ocupacion">Compra o Renta</label>
+                <select id="ocupacion">
+                    <option value disabled selected>--- Seleccione ---</option>
+                    <option value="1">Compra</option>
+                    <option value="2">Renta</option>
+                </select>
+                <label for="presupuesto">Precio o Presupuesto</label>
+                <input id="presupuesto" type="number" placeholder="Tu Presupuesto">
+            </fieldset>
+            <!-- informacion de contacto -->
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Como desea ser Contactado</p>
+                <!-- forma de contactar -->
+                <div class="forma-contacto">
+                    <label for="contactar-telefono">Teléfono</label>
+                    <input name="contacto" type="radio" value="0" id="contactar-telefono">
+                    <label for="contactar-correo">E-mail</label>
+                    <input name="contacto" type="radio" value="1" id="contactar-correo">
+                </div>
+                <p>Si eligío teléfono, elija la fecha y la hora</p>
+                <label for="fecha">Fecha</label>
+                <input id="fecha" type="date">
+                <label for="hora">Hora</label>
+                <input id="hora" type="time" min="09:00" max="18:00">
+            </fieldset>
+            <!-- botton azul -->
+            <div class="boton-azul-rigth">
+                <input type="submit" value="Enviar" class="boton-azul">
+            </div>
+        </form>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>Bienes<span>Raices</span>Tux Todos los Derechos Reservados &copy;</p>
+    </footer>
+
+    <!-- mandamos a llmar js -->
+    <script src=" js/script.js"></script>
+</body>
+
+</html>
